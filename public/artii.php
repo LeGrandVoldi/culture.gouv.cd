@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Actus || Mincult</title>
+	<!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+	<!-- plugins css -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/flaticon/css/flaticon_towngov.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/vendor/youtube-popup/youtube-popup.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- favicons Icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/image/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/image/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/image/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/image/favicons/site.html">
+</head>
+<body>
+<div id="pre-loader">
+    <div id="loader-logo"></div><!-- loader-logo -->
+    <div id="loader-circle"></div><!-- loader-circle -->
+    <div class="loader-section section-left"></div><!-- loader-section -->
+    <div class="loader-section section-right"></div><!-- loader-section -->
+</div><!-- pre-loader -->
+<header class="header header-two">
+	<div class="topbar-one">
+		<div class="topbar-one-left">
+			<div class="menu-logo">
+				<a href="index.html"><img src="assets/image/logomin.png" width="160" alt="img-27"></a>
+			</div><!-- menu-logo -->
+		</div><!-- topbar-one-left -->
+		<div class="container">
+			<div class="topbar-one-middle">
+				<div class="topbar-info">
+					<ul>
+						<li>
+							<div class="topbar-icon">
+								<i class="fa-solid fa-envelope"></i>
+							</div><!-- topbar-icon -->
+							<div class="topbar-text">
+								<a href="mailto:info@culture.gouv.cd">info@culture.gouv.cd</a>
+							</div><!-- topbar-text -->
+						</li><!-- li -->
+						
+					</ul><!-- ul -->
+				</div><!--topbar-info-->
+				<div class="topbar-right">
+					<ul>
+						<li>Adresse : Av. Boulevard du 30 juin n°154, BP 3164 et 3131 Kinshasa/Gombe</li>
+						
+					</ul><!-- ul -->
+				</div><!--topbar-right-->
+			</div><!--topbar-one-middle-->	
+			<div class="main-menu menu-two sticky-header">
+				<div class="main-menu-one-inner">
+					<div class="main-menu-left">
+						<div class="navigation">
+							<ul class="main-menu-list list-unstyled">
+								<li class="active">
+									<a href="index.html">Acceuil</a>
+								</li><!-- has-dropdown -->
+								<li class="has-dropdown">
+									<a href="#">Le Ministère</a>
+									<ul class="list-unstyled">
+										<li><a href="min.html">Le Ministère</a></li>
+										<li><a href="cabinet.html">Le Cabinet</a>
+										<li><a href="secretariat.html">Le Secretariat Général</a></li>
+										<li><a href="entites.html">Les Entités sous tutelle</a></li>
+										<!--<li><a href="#">Services spécialisés</a></li>-->
+									</ul><!-- list-unstyled -->
+								</li><!-- has-dropdown -->
+								<li>
+									<a href="doc.html">Culture 360</a>
+								</li><!-- has-dropdown -->
+								<li>
+									<a href="discover.html">Redécouvrir la culture</a>
+								</li><!-- has-dropdown -->
+								<li>
+									<a href="actu.html">Actualités</a>
+								</li><!--has-dropdown-->
+								<li>
+									<a href="contact.html">Contact</a>
+								</li><!-- li -->
+							</ul><!-- main-menu-list -->
+						</div><!-- navigation -->
+					</div><!-- main-menu-left -->
+					<div class="main-menu-right">
+						<div class="mobile-menu-button mobile-nav-toggler">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div><!-- mobile-menu-button -->
+						
+					</div><!-- main-menu-right -->
+				</div><!-- main-menu-one-inner -->
+			</div><!-- main-menu menu-two -->
+		</div><!-- container -->
+		<div class="topbar-one-button">
+			<a href="https://docs.google.com/forms/d/1bqQszDbQtawjOU6oF8ynovgLKFU74TAqfbVx9b9Ll34/edit" class="btn btn-primary">S'enregistrer</a>
+		</div><!-- topbar-one-button -->
+	</div><!-- topbar-one -->
+</header><!--header-->
+<div class="page-wrapper">
+	<section class="page-banner">
+		<div class="container">
+			<div class="page-breadcrumbs">
+				<ul class="list-unstyled">
+					<li><a href="index.html">Home</a></li>
+					<li>Actualités</li>
+				</ul><!-- list-unstyled -->
+			</div><!-- page-breadcrumbs -->
+			<div class="page-banner-title">
+				<h3>Actualités</h3>
+			</div><!-- page-banner-title -->
+		</div><!-- container -->			
+	</section><!--page-banner-->
+
+	<section class="blog-section">
+		<div class="container">
+			<div class="blog-box">
+				<div class="section-title-box text-center">
+					<div class="section-tagline">DIRECTEMENT DU BLOG</div>
+					<h2 class="section-title">Découvrez les dernières<br>Actualités</h2>
+				</div><!-- section-title-box -->
+			</div><!--blog-box-->
+			<div class="row row-gutter-y-155">
+			<?php
+                    $dbHost = "localhost";
+                    $dbUser = "cultureg_herdys";
+                    $dbPassword = "Supergirl007";
+                    $dbName = "cultureg_2022";
+                    
+                    try {
+                        // Connexion à la base de données
+                        $conn = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8", $dbUser, $dbPassword);
+                        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                        // Requête pour récupérer tous les articles
+                        $sql = "SELECT * FROM articles";
+                        $stmt = $conn->query($sql);
+
+                        // Vérifier s'il y a des résultats
+                        if ($stmt->rowCount() > 0) {
+                            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                                echo '
+                                <div class="col-lg-4">
+                                    <div class="blog-card">
+                                        <div class="blog-card-image">
+                                            <img src="'. $row['image_url'] .'" class="img-fluid" alt="article-image">
+                                            <a href="art.php?id='. $row['article_id'] .'"></a>
+                                        </div>
+                                        <div class="blog-card-date">
+                                            <span>15 JUIL</span>
+                                        </div>
+                                        <div class="blog-card-content">
+                                            <br>
+                                            <h5><a href="art1.html" style="color:#17418a;">'. $row['titre'] .'</a></h5>
+                                            <p>' . substr($row['description'], 0, 143) . '...</p>
+                                        </div>
+                                    </div>
+                                </div>';
+                            }
+                        } else {
+                            echo '<p>Aucun article disponible pour le moment.</p>';
+                        }
+                    } catch (PDOException $e) {
+                        echo "Erreur : " . $e->getMessage();
+                    }
+                ?>
+				<!-- col-lg-4 -->
+			
+			</div><!-- row -->
+			
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- blog-section -->
+</div><!--page-wrapper-->		
+<section class="footer">
+	<div class="footer-inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="footer-widget-logo">
+						<a href="index.html"><img src="assets/image/logomin.png" class="img-fluid" alt="img-25"></a>
+					</div><!-- footer-widget-logo -->
+					<div class="footer-widget-text">
+						<p>Célébrons la culture : Diversité, Inclusion, Mémoire Collective</p>
+					</div><!-- footer-widget-text -->
+					<div class="footer-widget-socials">
+						<a href="https://twitter.com/minculturap_rdc?lang=en"><i class="fa-brands fa-twitter"></i></a>
+						<a href="https://www.facebook.com/minicultureartsrdc/?locale=fr_FR"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.tiktok.com/@min_cap"><i class="fa-brands fa-tiktok"></i></a>
+						<a href="https://www.instagram.com/mincap_rdc/"><i class="fa-brands fa-instagram"></i></a>
+                                                <a href="https://www.linkedin.com/company/minist%C3%A8re-de-la-culture-arts-et-patrimoines-rdc?trk=public_post_feed-actor-name"><i class="fa-brands fa-linkedin"></i></a>
+					</div><!-- footer-widget-socials --> 
+				</div><!--col-lg-4-->
+				<div class="col-lg-3">
+					<div class="footer-widget">
+						<div class="footer-widget-explore">
+							<h4 class="footer-widget-title">Explorer</h4>
+							<ul class="list-unstyled">
+								<li><a href="doc.html">Culture 360</a></li>
+								<li><a href="discover.html">Redécouvrir la culture</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul><!-- list-unstyled -->
+						</div><!-- footer-widget-explore -->
+					</div><!--footer-widget-->
+				</div><!--col-lg-3-->
+				<div class="col-lg-2">
+					<div class="footer-widget">
+						<div class="footer-widget-department">
+							<h4 class="footer-widget-title">Organismes</h4>
+							<ul class="list-unstyled">
+								<li><a href="cabinet.html">Le Cabinet du Ministre</a></li>
+								<li><a href="secretariat.html">Le Secrétariat Général </a></li>
+								<li><a href="entites.html">Entités sous supervision</a></li>
+							</ul><!-- list-unstyled -->
+						</div><!-- footer-widget-department -->
+					</div><!--footer-widget-->
+				</div><!--col-lg-2-->
+				<div class="col-lg-3">
+					<div class="footer-widget">
+						<div class="footer-widget-contact">
+							<h4 class="footer-widget-title">Contact</h4>
+							<p>Av. Boulevard du 30 juin n°154, BP 3164 et 3131<br>Kinshasa/Gombe</p>
+						</div><!-- footer-widget-contact -->
+						<div class="footer-widget-contact-list">
+							<i class="fa-solid fa-envelope"></i>
+							<div class="footer-widget-contact-item">
+								<a href="mailto:info@culture.gouv.cd">info@culture.gouv.cd</a>
+							</div><!-- footer-widget-contact-item -->
+						</div><!-- footer-widget-contact-list -->
+						<div class="footer-widget-contact-list">
+							<i class="fa-solid fa-phone"></i>
+							<div class="footer-widget-contact-item">
+								<a href="tel:+243814814409">+243814814409</a>
+							</div><!-- footer-widget-contact-item -->
+						</div><!-- footer-widget-contact-list -->
+					</div><!--footer-widget-->
+				</div><!--col-lg-3-->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!--footer-inner-->
+	<div class="bottom-footer">
+		<div class="conatiner">
+			<p>© Copyright 2024 , Ministère de la culture, arts et patrimoine</p>
+		</div><!-- container -->
+	</div><!--bottom-footer-->
+</section><!--footer-->
+<div class="mobile-nav-wrapper">
+	<div class="mobile-nav-overlay mobile-nav-toggler"></div><!-- mobile-nav-overlay -->
+	<div class="mobile-nav-content">
+		<a href="#" class="mobile-nav-close mobile-nav-toggler">
+			<span></span>
+			<span></span>
+		</a><!-- mobile-nav-close -->
+		<div class="logo-box">
+			<a href="index.html"><img src="assets/image/logomin.png" width="160" height="40" alt="191"></a>
+		</div><!-- logo-box -->
+		<div class="mobile-nav-container"></div><!-- mobile-nav-container -->
+		<ul class="mobile-nav-contact list-unstyled">
+			<li>
+				<i class="fa-solid fa-phone"></i>
+				<a href="tel:+243814814409">+243814814409</a>
+			</li><!-- li -->
+			<li>
+				<i class="fa-solid fa-envelope"></i>
+				<a href="mailto:needhelp@company.com">info@culture.gouv</a>
+			</li><!-- li -->
+			<li>
+				<i class="fa-solid fa-map-marker-alt"></i>
+				Adresse : Av. Boulevard du 30 juin n°154, BP 3164 et 3131 Kinshasa/Gombe
+			</li><!-- li -->
+		</ul><!-- /.mobile-nav-contact -->
+		<ul class="mobile-nav-social list-unstyled">
+			<li><a href="https://twitter.com/minculturap_rdc?lang=en"><i class="fa-brands fa-twitter"></i></a></li>
+			<li><a href="https://www.facebook.com/minicultureartsrdc/?locale=fr_FR"><i class="fa-brands fa-facebook"></i></a></li>
+			<li><a href="https://www.tiktok.com/@min_cap"><i class="fa-brands fa-tiktok"></i></a></li>
+			<li><a href="https://www.instagram.com/mincap_rdc/"><i class="fa-brands fa-instagram"></i></a></li>
+			<li><a href="https://www.linkedin.com/company/minist%C3%A8re-de-la-culture-arts-et-patrimoines-rdc?trk=public_post_feed-actor-name"><i class="fa-brands fa-linkedin"></i></a></li>
+		</ul><!-- mobile-nav-social -->
+	</div><!-- mobile-nav-content -->
+</div><!-- mobile-nav-wrapper -->
+<div class="search-popup">
+	<div class="search-popup-overlay search-toggler"></div><!-- search-popup__overlay -->
+	<div class="search-popup-content">
+		<form action="#">
+			<label for="search" class="sr-only">search here</label><!-- sr-only -->
+			<input type="text" id="search" placeholder="Search Here...">
+			<button type="submit" aria-label="search submit" class="search-btn">
+				<span><i class="flaticon-search-interface-symbol"></i></span>
+			</button><!-- search-btn -->
+		</form><!-- form -->
+	</div><!-- search-popup-content -->
+</div><!-- search-popup -->
+<a href="#" class="scroll-to-top scroll-to-target" data-target="html"><i class="fa-solid fa-arrow-up"></i></a>
+<script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="assets/vendor/counter-up/jquery.counterup.min.js"></script>
+<script src="assets/vendor/youtube-popup/youtube-popup.jquery.js"></script>
+<script src="assets/js/theme.js"></script>
+</body>
+
+</html>

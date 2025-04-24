@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Söhne,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+    background-color: rgba(83, 128, 193, 0.8); /* Couleur avec opacité */
+    position: fixed; /* Rend la barre de navigation fixe */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Assure que la barre de navigation est au-dessus des autres éléments */
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    align-items: center; /* Aligne les éléments verticalement */
+    padding: 0 20px; /* Ajoute du padding à gauche et à droite */
+}
+
+nav .logo {
+    height: 60px; /* Ajustez la hauteur du logo selon vos besoins */
+    margin-right: 20px; /* Espace entre le logo et les onglets */
+}
+@media (max-width: 768px) {
+    nav .logo {
+        height: 60px; /* Ajustez la hauteur du logo selon vos besoins */
+        margin-right: 20px; /* Espace entre le logo et les onglets */
+        margin: 7px;
+    }
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centre les onglets horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    height: 80px; /* Hauteur de la barre de navigation */
+    flex-grow: 1; /* Permet aux onglets de prendre tout l'espace disponible */
+}
+
+nav ul li {
+    display: inline-block; /* Utilise inline-block pour que chaque élément soit une unité de bloc */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 16px; /* Espacement à l'intérieur des liens */
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 85vh; /* 70% de la hauteur de l'écran */
+    overflow: hidden;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 70vh; /* 70% de la hauteur de l'écran */
+        overflow: hidden;
+        margin: auto;
+    }
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slidei {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slidei img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image couvrira toute la zone */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+@media (min-width: 768px) {
+#minister-message {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* 70% de la hauteur de la bannière */
+    overflow: hidden;
+}
+
+#minister-message img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toute la zone */
+}
+
+#minister-messagei {
+    position: relative;
+    width: 100%;
+    height: 87vh; /* 70% de la hauteur de la bannière */
+    overflow: hidden;
+}
+
+#minister-messagei img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toute la zone */
+}
+.nav-mobile .btn-show {
+    display: none;
+}
+}
+@media (max-width: 768px) {
+
+.nav-mobile {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Aligne le bouton à droite */
+}
+
+.nav-mobile .btn-show {
+    background-color: #FFD700; /* Jaune */
+    color: #000; /* Couleur du texte en noir pour contraster avec le jaune */
+    border: none;
+    padding: 5px 20px; /* Ajouter un peu plus d'espace à droite et à gauche */
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Effet de transition pour le changement de couleur */
+}
+
+.nav-mobile .btn-show:hover {
+    background-color: #FFC107; /* Jaune légèrement plus foncé au survol */
+}
+
+}
+
+.separator {
+    width: 100%;
+    height: 10px; /* Hauteur de la barre de séparation */
+    background-color: #5380c1; /* Couleur de la barre */
+}
+
+#featured {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+#featured h2 {
+    margin-bottom: 10px; /* Marge sous le titre */
+}
+
+#featured p {
+    margin-bottom: 20px; /* Marge sous le paragraphe */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 100px 0; /* Ajustez selon vos besoins */
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0; /* Assurez-vous qu'il n'y a pas de margin */
+    padding: 0; /* Assurez-vous qu'il n'y a pas de padding */
+}
+
+.footer-column {
+    width: 22%;
+    margin: 10px 0; /* Ajustez ou retirez cette marge si nécessaire */
+    text-align: left;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Assurez-vous qu'il n'y a pas de margin */
+}
+
+.footer-column ul li {
+    margin: 5px 0; /* Ajustez ou retirez cette marge si nécessaire */
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+
+footer p {
+    margin: 0;
+    padding: 20px 0; /* Ajoutez du padding en haut et en bas pour ajuster la position */
+    position: relative;
+    bottom: 0; /* Assurez-vous qu'il est positionné correctement */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 90%; /* Slightly reduce width to add space on sides */
+        margin: 10px 5%; /* Add margin to center the column */
+        padding: 0 20px; /* Ensure padding on left and right */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    #minister-messagei img {
+        width: 100%; /* Ajuste la largeur de l'image pour les appareils mobiles */
+        margin: 0 auto; /* Centre l'image */
+    }
+
+    #minister-message img {
+        width: 100%; /* Ajuste la largeur de l'image pour les appareils mobiles */
+        margin: 0 auto; /* Centre l'image */
+    }
+
+}
