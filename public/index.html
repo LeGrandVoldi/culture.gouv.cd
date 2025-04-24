@@ -15,19 +15,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 	<!-- plugins css -->
-	<link rel="stylesheet" type="text/css" href="assets/vendor/reey-font/stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/flaticon/css/flaticon_towngov.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="assets/vendor/youtube-popup/youtube-popup.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href={{asset("assets/vendor/reey-font/stylesheet.css")}}>
+	<link rel="stylesheet" type="text/css" href={{asset("assets/vendor/bootstrap/bootstrap.min.css")}}>
+	<link rel="stylesheet" type="text/css" href={{asset("assets/vendor/font-awesome/css/all.min.css")}}>
+	<link rel="stylesheet" type="text/css" href={{asset("assets/vendor/flaticon/css/flaticon_towngov.css")}}>
+	<link rel="stylesheet" type="text/css" href={{asset("assets/vendor/owl-carousel/owl.carousel.min.css")}}>
+	<link rel="stylesheet" type="text/css" href={{asset("assets/vendor/swiper/swiper-bundle.min.css")}}>
+	<link rel="stylesheet" href={{asset("assets/vendor/youtube-popup/youtube-popup.css")}}>
+	<link rel="stylesheet" type="text/css" href={{asset("assets/css/style.css")}}>
 	<!-- favicons Icons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/image/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/image/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/image/favicon/favicon-16x16.png">
-	<link rel="manifest" href="assets/image/favicons/site.html">
+	<link rel="apple-touch-icon" sizes="180x180" href={{asset("assets/image/favicon/apple-touch-icon.png")}}>
+	<link rel="icon" type="image/png" sizes="32x32" href={{asset("assets/image/favicon/favicon-32x32.png")}}>
+	<link rel="icon" type="image/png" sizes="16x16" href={{asset("assets/image/favicon/favicon-16x16.png")}}>
     <script>
     // Fonction pour afficher le pop-up après un délai
     window.onload = function() {
@@ -51,80 +50,116 @@
 
     </script>
     <style>
-        /* Style de base pour le pop-up */
-    .popup {
-        display: none;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        justify-content: center;
-        align-items: center;
-        z-index:1000;
-    }
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
 
-    .popup-content {
-        background-color: white;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        width: 400px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    }
+        .close-btn {
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: rgba(255, 0, 0, 0.8);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            z-index: 1001;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
 
-    .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 30px; /* Augmente la taille de la croix */
-    font-weight: bold; /* Rend la croix plus épaisse */
-    color: #ff0000; /* Assombrit la couleur pour plus de contraste */
-    cursor: pointer;
-    transition: color 0.3s ease;
-    }
+        .close-btn:hover {
+            background-color: #cc0000;
+            transform: scale(1.1);
+        }
 
-    .close-btn:hover {
-        color: #ff0000; /* Change la couleur au survol pour attirer l'attention */
-    }
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            width: 450px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
 
+        .popup-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
 
-    input[type="email"] {
-        width: 90%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+        .popup-content h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+        }
 
-    button {
-        padding: 10px 20px;
-        background-color: #5cb85c;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+        .popup-content p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
 
-    button:hover {
-        background-color: #4cae4c;
-    }
+        .popup-content a.btn-primary {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
 
+        .popup-content a.btn-primary:hover {
+            background-color: #4cae4c;
+        }
     </style>
+
 </head>
 <!-- Contenu du site -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="closePopup()">&times;</span>
-            <h2>Inscrivez-vous à l'Agenda Culturel Annuel de la RDC</h2>
-            <p>
-                Faite briller la culture congolaise au niveau national et international. <br>
-                Enregistrez votre événement et rejoignez la vitrine officielle des expressions culturelles de la RDC.
-            </p><br>
-            <a href="/admin" class="btn btn-primary">S'inscrire</a>
-        </div>
+<div id="popup" class="popup">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <div class="popup-content">
+        <img src="https://civility.co/wp-content/uploads/2023/06/2023-06-13_Post_What-You-Really-Need-to-Know-About-Consent-Agendas-1024x393.jpg" alt="Image culturelle RDC">
+        <h2>Inscrivez-vous à l'Agenda Culturel Annuel de la RDC</h2>
+        <p>
+            Cliquez ci-dessous pour l'ajouter à votre calendrier et recevoir un rappel.
+        </p>
+        <a href="/admin" target="_blank" class="btn btn-primary">
+            Ajouter à mon calendrier
+        </a>
     </div>
+</div>
+
+<script>
+    function showPopup() {
+        document.getElementById('popup').style.display = 'flex';
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+    window.onload = function () {
+        setTimeout(showPopup, 2000);
+    };
+</script>
 <div id="pre-loader">
     <div id="loader-logo"></div><!-- loader-logo -->
     <div id="loader-circle"></div><!-- loader-circle -->
@@ -135,7 +170,7 @@
 	<div class="topbar-one">
 		<div class="topbar-one-left">
 			<div class="menu-logo">
-				<a href="index.html"><img src="assets/image/logomin.png" width="160" alt="img-27"></a>
+				<a href="index.html"><img src={{asset("assets/image/logomin.png")}} width="160" alt="img-27"></a>
 			</div><!-- menu-logo -->
 		</div><!-- topbar-one-left -->
 		<div class="container">
@@ -285,6 +320,7 @@
 						<h4 class="section-title">Services <br>Culturels</h4>
 						<ul>
 							<li><a href="/admin">Inscription à l'agenda culturel<i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a href="/voir--agenda" target="_blank">Voir l'agenda culturel<i class="fa-solid fa-chevron-right"></i></a></li>
 							<li><a href="https://enregistrement.capcongo.online/">S'identifier en tant qu'artiste ou opérateur<i class="fa-solid fa-chevron-right"></i></a></li>
 							<li><a href="https://imnc.online">Visiter le Musée National<i class="fa-solid fa-chevron-right"></i></a></li>
 							<li><a href="https://fpc.cd">Demander un accompagnement au FPC<i class="fa-solid fa-chevron-right"></i></a></li>

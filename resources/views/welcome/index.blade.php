@@ -136,13 +136,14 @@
 <div id="popup" class="popup">
     <span class="close-btn" onclick="closePopup()">&times;</span>
     <div class="popup-content">
-        <img src="https://7sur7.cd/sites/default/files/styles/article_2022/public/2025-03/IMG-20250328-WA0001.jpg?itok=fjSOwD7U" alt="Image culturelle RDC">
-        <h2>Participez au Concert de la Solidarité Congolaise</h2>
+        <img src="https://civility.co/wp-content/uploads/2023/06/2023-06-13_Post_What-You-Really-Need-to-Know-About-Consent-Agendas-1024x393.jpg" alt="Image culturelle RDC">
+        <h2>Inscrivez-vous à l'Agenda Culturel Annuel de la RDC</h2>
         <p>
-            Unissons nos voix pour soutenir la culture et la fraternité congolaise. <br>
-            Rejoignez cet événement exceptionnel qui célèbre l’unité, la paix et la richesse de notre identité nationale.
+            Cliquez ci-dessous pour l'ajouter à votre calendrier et recevoir un rappel.
         </p>
-        <a href="https://sweet-crest-26-staging.authkit.app/sign-up?redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&authorization_session_id=01JSBRJM7R90BTE413PYBRAADT" target="_blanc" class="btn btn-primary">S'inscrire</a>
+        <a href="/admin" target="_blank" class="btn btn-primary">
+            Ajouter à mon calendrier
+        </a>
     </div>
 </div>
 
